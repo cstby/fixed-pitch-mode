@@ -17,6 +17,23 @@ This package provides `fixed-pitch-mode`, a minor mode for setting a monospaced 
 
 Using a monospaced font [increases the readability of code](https://stackoverflow.com/questions/218623/why-use-monospace-fonts-in-your-ide), but do we need it everywhere else? Most applications use proportional fonts for their GUI. However, Emacs seems to assume that you will use a monospaced font as your global default. Although it provides the option to set both `variable-pitch ` and `fixed-width` faces, it only provides a `variable-pitch-mode`. This package is for those who want to only use a monospaced font for code.
 
+## Screenshots
+
+The first screenshot below shows Emacs using `fixed-pitch` with a proportional typeface set as the default.  The emacs-lisp buffer uses a monospaced typeface because `fixed-pitch-mode` is active. The modeline, message buffer, tabs, and mini-buffer all use a proportional font. 
+
+This second screenshot shows the same Emacs configuration without the `fixed-pitch` package. A monospaced typeface is set as the default font, and it's used wherever text is displayed.
+
+
+
+### Fixed Pitch Package
+
+![alt text](./screenshots/fixed-pitch-enabled.png)
+
+### Default Monospaced Font
+![alt text](./screenshots/fixed-pitch-disabled.png)
+
+
+
 ## Installation
 
 ### Manual
@@ -82,7 +99,7 @@ Most Emacs packages assume that users have a monospaced typeface globally. Some 
 
 Finally, in the case where you want to use the extended default list but need proportional fonts for mode hooks included in that list, you can add those lists to a blacklist.
 
-### Example
+### Example Configuration
 
 Here is an example of a (somewhat nonsensical) configuration with `use-package`.
 
