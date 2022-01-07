@@ -50,7 +50,7 @@ If you use [straight.el](https://github.com/raxod502/straight.el) with the `stra
 
 ```emacs-lisp
 (use-package fixed-pitch
-  :straight (:type git :host github :repo "cstby/fixed-pitch"))
+  :straight (:type git :host github :repo "cstby/fixed-pitch-mode"))
 ```
 
 ## Usage
